@@ -2,6 +2,7 @@ package net.mingli.chineseculture;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mingli.chineseculture.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +12,6 @@ public class ChineseCulture implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
