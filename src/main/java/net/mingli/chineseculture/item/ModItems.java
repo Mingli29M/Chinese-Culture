@@ -12,16 +12,17 @@ import net.mingli.chineseculture.ChineseCulture;
 
 public class ModItems {
     public static final Item FABRIC = registerItem("fabric", new Item(new FabricItemSettings()));
+    public static final Item LARGE_FABRIC = registerItem("large_fabric", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(FABRIC);
+        entries.add(LARGE_FABRIC);
     }
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(ChineseCulture.MOD_ID, name), item);
     }
     public static void  registerModItems(){
         ChineseCulture.LOGGER.info("Registering Mod Items for "+ ChineseCulture.MOD_ID);
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

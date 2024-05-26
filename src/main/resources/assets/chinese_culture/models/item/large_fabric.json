@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "chines_culture:item/fabric"
+    "layer0": "chinese_culture:item/large_fabric"
   }
 }
