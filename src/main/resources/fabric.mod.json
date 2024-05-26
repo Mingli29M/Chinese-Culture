@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "chinese-culture",
+	"version": "${version}",
+	"name": "Chinese culture",
+	"description": "This is a mod about chinese culture",
+	"authors": [
+		"Mingli29"
+	],
+	"contact": {
+		"homepage": "https://space.bilibili.com/3493264688679470?spm_id_from=333.337.0.0",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/chinese-culture/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mingli.chineseculture.ChineseCulture"
+		],
+		"client": [
+			"net.mingli.chineseculture.ChineseCultureClient"
+		],
+		"fabric-datagen": [
+			"net.mingli.chineseculture.ChineseCultureDataGenerator"
+		]
+	},
+	"mixins": [
+		"chinese-culture.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
